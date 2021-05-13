@@ -148,29 +148,39 @@ body {font-family: "Lato", sans-serif}
   <!-- Де зупинитися -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
     <h2 class="w3-wide w3-center">Де зупинитися на ночівлю?</h2>
-<!--     <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-      </div>
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-        </form>
-      </div>
-    </div>
-  </div> -->
+    <body>
+<div class="w3-container">
+
+<h2>Active Accordions</h2>
+<p>In this example we add the w3-red class to an active accordion (when the button is clicked on and the content is opened).</p>
+
+<button onclick="myFunction('Demo1')" class="w3-button w3-block w3-black w3-left-align">Open Section 1</button>
+<div id="Demo1" class="w3-hide w3-container">
+    <p>Some text..</p>
+</div>
+
+<button onclick="myFunction('Demo2')" class="w3-button w3-block w3-black w3-left-align">Open Section 2</button>
+<div id="Demo2" class="w3-hide w3-container">
+    <p>Some other text..</p>
+</div>
+
+</div>
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace("w3-black", "w3-white");
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace("w3-white", "w3-black");
+  }
+}
+</script>
+
+
   
 <!-- End Page Content -->
 </div>
