@@ -148,6 +148,43 @@ body {font-family: "Lato", sans-serif}
   <!-- Де зупинитися -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
     <h2 class="w3-wide w3-center">Де зупинитися на ночівлю?</h2>
+    <body>
+<div class="w3-container">
+<h2>Accordions</h2>
+<p>An accordion with links:</p>
+
+<button onclick="myFunction('Demo1')" class="w3-button w3-block w3-black w3-left-align">
+   <p class="w3-justify">
+  Знизу наведені посиланння на:</p>
+  <p class="w3-justify">
+  1. Сайт зняття квартр подобово</p>
+  <p class="w3-justify">
+  2. Сайт Готелю Україна</p>
+   <p class="w3-justify">
+  3. Сайт з хостелом "Друзі"(на цьому сайті можна знайти і інші варіанти)</p></button>
+
+<div id="Demo1" class="w3-hide">
+  <a class="w3-button w3-block w3-left-align" href="#">https://doba.ua/ukr/lutsk</a>
+  <a class="w3-button w3-block w3-left-align" href="#">http://hotel-lutsk.com/</a>
+  <a class="w3-button w3-block w3-left-align" href="#">https://hostel-druzi-lutsk.nochi.com.ua/</a>
+</div>
+
+</div>
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+    
+    
+    
+    
 <body>
 <div class="w3-container">
 <h2></h2>
